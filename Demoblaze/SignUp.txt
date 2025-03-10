@@ -1,0 +1,14 @@
+
+*** Settings ***
+Library    SeleniumLibrary
+
+
+*** Variables ***
+${CHROMEDRIVER_PATH}    /workspaces/Codespaceprac/Demoblaze/chromedriver-linux64/chromedriver
+
+
+*** Test Cases ***
+Example Test
+
+    Open Browser    https://example.com    chrome    executable_path=${CHROMEDRIVER_PATH}
+    [Teardown]    Close Browser
